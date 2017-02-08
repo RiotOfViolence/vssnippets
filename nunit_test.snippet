@@ -1,35 +1,65 @@
+<!--
+ 
+Snippet to create an empty NUnit test with comments, like:
+ 
+[Test]
+public void TestName()
+{
+    // prepare
+   
+    // system under test
+   
+    // verify
+   
+}
+ 
+-----------------------------------------------------------------
+ 
+To use:
+ 
+1. Paste into *.snippet file
+2. Open Visual Studio 2015 (other Versions might work, have not tested)
+3. Tools -> Code Snippets Manager
+4. Press Import... and choose *.snippet file
+5. Confirm
+6. start typing "ntest", press tab twice
+ 
+If the snippet isnt showing in Intellisense, restart Visual Studio.
+ 
+-->
+ 
 <?xml version="1.0" encoding="utf-8" ?>
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>NUnit Test Method</Title>
-			<Shortcut>ntest</Shortcut>
-			<Description>Code snippet for empty NUnit test</Description>
-			<Author>Adrian Kuper</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-				<SnippetType>SurroundsWith</SnippetType>
-			</SnippetTypes>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>name</ID>
-					<Default>UnitOfWork__StateUnderTest__ExpectedBehavior</Default>
-					<ToolTip>Name of unit test</ToolTip>
-				</Literal>
-			</Declarations>
-			<Code Language="csharp"><![CDATA[[Test]
-			public void $name$()
-			{
-				// prepare
-			$selected$ $end$
-				// system under test
-				
-				// verify
-				
-			}]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>NUnit Test</Title>
+            <Shortcut>ntest</Shortcut>
+            <Description>Code snippet for empty NUnit test</Description>
+            <Author>Adrian Kuper</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <Default>UnitOfWork__StateUnderTest__ExpectedBehavior</Default>
+                    <ToolTip>Name of unit test</ToolTip>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[[Test]
+            public void $name$()
+            {
+                // prepare
+            $selected$ $end$
+                // system under test
+               
+                // verify
+               
+            }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
 </CodeSnippets>
