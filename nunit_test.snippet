@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>NUnit Test Method</Title>
+			<Shortcut>ntest</Shortcut>
+			<Description>Code snippet for empty NUnit test</Description>
+			<Author>Adrian Kuper</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>UnitOfWork__StateUnderTest__ExpectedBehavior</Default>
+					<ToolTip>Name of unit test</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[[Test]
+			public void $name$()
+			{
+				// prepare
+			$selected$ $end$
+				// system under test
+				
+				// verify
+				
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
