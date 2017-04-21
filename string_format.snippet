@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>String-Format-Snippet</Title>
+            <Shortcut>sformat</Shortcut>
+            <Description>Code snippet for string.Format()-Method</Description>
+            <Author>Adrian Kuper</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>text</ID>
+                    <Default>text</Default>
+                    <ToolTip>The String</ToolTip>
+                </Literal>
+				<Literal>
+                    <ID>variables</ID>
+                    <Default>v1</Default>
+                    <ToolTip>The String variables to insert</ToolTip>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[string.Format("$text$", $variables$)$selected$$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
