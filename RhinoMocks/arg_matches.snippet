@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Arg&lt;T&gt;.Matches()-Snippet</Title>
+            <Shortcut>argmatches</Shortcut>
+            <Description>Code snippet for Arg&lt;T&gt;.Matches()-Method</Description>
+            <Author>Adrian Kuper</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>type</ID>
+                    <Default>T</Default>
+                    <ToolTip>Type of argument</ToolTip>
+                </Literal>
+                <Literal>
+                  <ID>pred</ID>
+                  <Default>predicate</Default>
+                  <ToolTip>The predicate</ToolTip>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+              <![CDATA[Arg<$type$>.Matches($pred$)$selected$$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
